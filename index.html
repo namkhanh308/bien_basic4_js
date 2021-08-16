@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<form action="#">
+
+    <div class="tong">
+        <div class="left">
+            <label for="tien">Amount</label>
+            <input type="text" name = "amount" id = "tien">
+        </div>
+        <div class="center">
+            <label>Form Currency</label>
+            <select name="nguon" id="nguon">
+                <option value="vn">VietNam</option>
+                <option value="my" >Usd</option>
+            </select>
+        </div>
+        <div class="right">
+            <label>To Currency</label>
+            <select name="dich" id="dich">
+                <option value="my" selected>Usd</option>
+                <option value="vn" >VietNam</option>
+            </select>
+        </div>
+        <button type="submit" id = "btn">Convert</button>
+    </div>
+    <span id = "result"></span>
+</form>
+<script src="./app.js"></script>
+</body>
+</html>
